@@ -60,7 +60,7 @@ public class DataBase implements TaskRepository {
                 System.out.println(query);
                 stmt.executeUpdate(query);
             } catch (SQLException s){
-                e.printStackTrace();
+                s.printStackTrace();
             }
         }
 
@@ -156,7 +156,7 @@ public class DataBase implements TaskRepository {
             to.setDate(format.parse(date));
             createAndUpdateTable(to);
             return to;
-        } catch (ParseException p){
+        } catch (Exception p){
             p.printStackTrace();
         }
         return null;
@@ -183,6 +183,7 @@ public class DataBase implements TaskRepository {
     @Override
     public TaskObj delete(String name)  {
         try {
+            TaskObj s = searchData(name);
             if (!isNumeric(name)) {
                 query = "delete FROM TaskList where Name ='" + name + "'";
                 //showData(results);
@@ -191,7 +192,7 @@ public class DataBase implements TaskRepository {
                 //showData(results);
             }
             stmt.executeUpdate(query);
-            return searchData(name);
+            return s;
         }
         catch (SQLException  e){
             e.printStackTrace();
@@ -243,6 +244,7 @@ public class DataBase implements TaskRepository {
             if (!isNumeric(name)) {
                 query = "SELECT * FROM TaskList where Name ='" + name + "'";
                 ResultSet results = stmt.executeQuery(query);
+               // System.out.println(returnObject(results));
                 return returnObject(results);
             } else if (isNumeric(name)) {
                 return findById(Integer.parseInt(name));

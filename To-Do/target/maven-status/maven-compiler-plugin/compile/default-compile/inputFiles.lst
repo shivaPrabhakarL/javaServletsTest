@@ -6,9 +6,11 @@
 /home/shivap/IdeaProjects/To-Do/To-Do/src/main/java/com.shivaPrabhakar/TaskList.java
 /home/shivap/IdeaProjects/To-Do/To-Do/src/main/java/com.shivaPrabhakar/TaskRepository.java
 /home/shivap/IdeaProjects/To-Do/To-Do/src/main/java/com.shivaPrabhakar/TaskManager.java
-/home/shivap/IdeaProjects/To-Do/To-Do/src/main/java/Servlets/Servlets.java
+/home/shivap/IdeaProjects/To-Do/To-Do/src/main/java/com.shivaPrabhakar/Task.java
 /home/shivap/IdeaProjects/To-Do/To-Do/src/main/java/com.shivaPrabhakar/Status.java
 /home/shivap/IdeaProjects/To-Do/To-Do/src/main/java/com.shivaPrabhakar/InMemoryTaskRepository.java
 /home/shivap/IdeaProjects/To-Do/To-Do/src/main/java/com.shivaPrabhakar/Calculator.java
+/home/shivap/IdeaProjects/To-Do/To-Do/src/main/java/servlets/Servlets.java
+/home/shivap/IdeaProjects/To-Do/To-Do/src/main/java/servlets/ServletSearch.java
 /home/shivap/IdeaProjects/To-Do/To-Do/src/main/java/com.shivaPrabhakar/Main.java
 /home/shivap/IdeaProjects/To-Do/To-Do/src/main/java/com.shivaPrabhakar/DataBase.java

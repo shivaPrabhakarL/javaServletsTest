@@ -3,17 +3,31 @@
          xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
          xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
          id="WebApp_ID" version="2.5">
-  <display-name>Servlets</display-name>
+  <display-name>servlets</display-name>
 
 
   <servlet>
     <description></description>
     <display-name>HelloWorld</display-name>
-    <servlet-name>Servlets</servlet-name>
-    <servlet-class>Servlets.Servlets</servlet-class>
+    <servlet-name>servlets</servlet-name>
+    <servlet-class>servlets.Servlets</servlet-class>
   </servlet>
   <servlet-mapping>
-    <servlet-name>Servlets</servlet-name>
-    <url-pattern>/FindAll</url-pattern>
+    <servlet-name>servlets</servlet-name>
+    <url-pattern>/tasks</url-pattern>
   </servlet-mapping>
+
+  <servlet>
+    <description></description>
+    <display-name>Search</display-name>
+    <servlet-name>ServletSearch</servlet-name>
+    <servlet-class>servlets.ServletSearch</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>ServletSearch</servlet-name>
+    <url-pattern>/tasks/Search</url-pattern>
+  </servlet-mapping>
+
+
 </web-app>
