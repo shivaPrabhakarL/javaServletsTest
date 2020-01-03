@@ -15,6 +15,7 @@ public class Task {
     }
 
     String status;
+
     public String getId() {
         return id;
     }
@@ -47,7 +48,7 @@ public class Task {
         this.date = date;
     }
 
-    Task(){
+    Task() {
 
     }
 }

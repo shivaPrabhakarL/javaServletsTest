@@ -1,15 +1,11 @@
 package servlets;
 
-import com.fasterxml.jackson.core.JsonGenerator;
-import com.fasterxml.jackson.core.JsonParser;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.shivaPrabhakar.Task;
-import com.shivaPrabhakar.TaskList;
 import com.shivaPrabhakar.TaskManager1;
 import com.shivaPrabhakar.TaskObj;
-import org.json.JSONArray;
-import com.fasterxml.jackson.databind.ObjectMapper;
-//import javax.servlet.Servlet;
-import javax.servlet.ServletException;
+
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -18,6 +14,10 @@ import java.io.PrintWriter;
 import java.sql.SQLException;
 import java.text.ParseException;
 import java.util.List;
+
+//import org.json.JSONArray;
+//import javax.servlet.Servlet;
+//import javax.servlet.ServletException;
 
 public class Servlets extends HttpServlet {
     ObjectMapper objectMapper = new ObjectMapper();
@@ -29,15 +29,18 @@ public class Servlets extends HttpServlet {
         PrintWriter p = resp.getWriter();
         try {
             List<TaskObj> l = tm.findAll();
-            String list =  objectMapper.writeValueAsString( l);
-           // JSONArray ar = new JSONArray(l);
+            String list = objectMapper.writeValueAsString(l);
+            // JSONArray ar = new JSONArray(l);
             p.println(list);
 
 
         } catch (SQLException e) {
-            e.printStackTrace();
+            String response = "Sql query not correct or no such data.";
+            p.println(response);
         } catch (ParseException e) {
-            e.printStackTrace();
+            String response = "Incorrect date format";
+            p.println(response);
+
         }
     }
 
@@ -50,15 +53,20 @@ public class Servlets extends HttpServlet {
 //        String Desc = req.getParameter("Desc");
 //        String Date = req.getParameter("Date");
         //p.println(Name);
-     //   System.out.println(Name);
+        //   System.out.println(Name);
         try {
             TaskManager1 tm = new TaskManager1();
-            Task to1 =  objectMapper.readValue(req.getInputStream(),Task.class);
+            Task to1 = objectMapper.readValue(req.getInputStream(), Task.class);
             tm.addTask(to1.getName(), to1.getDesc(), String.valueOf(to1.getDate()));
             p.println(tm.searchData(to1.getName()));
 
-        } catch (ParseException | SQLException e) {
-            e.printStackTrace();
+        } catch (SQLException e) {
+            String response = "Sql query not correct or no such data.";
+            p.println(response);
+        } catch (ParseException e) {
+            String response = "Incorrect date format";
+            p.println(response);
+
         }
         resp.setStatus(201);
     }

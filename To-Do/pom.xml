@@ -54,6 +54,13 @@
       <version>5.1.48</version>
     </dependency>
 
+
+    <dependency>
+      <groupId>io.takari</groupId>
+      <artifactId>maven-wrapper</artifactId>
+      <version>0.3.0</version>
+    </dependency>
+
   </dependencies>
 
 

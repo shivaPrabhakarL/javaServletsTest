@@ -17,17 +17,23 @@ import java.text.ParseException;
 
 public class ServletSearch extends HttpServlet {
     ObjectMapper objectMapper = new ObjectMapper();
+
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
         TaskManager1 tm = new TaskManager1();
         PrintWriter p = resp.getWriter();
-        String s =  req.getParameter("id");
+        String s = req.getParameter("id");
         //Task to1 =  objectMapper.readValue(req.getInputStream(),Task.class);
         try {
             TaskObj to = tm.searchData(s);
             p.println(to);
-        } catch (SQLException | ParseException e) {
-            e.printStackTrace();
+        } catch (SQLException e) {
+            String response = "Sql query not correct or no such data.";
+            p.println(response);
+        } catch (ParseException e) {
+            String response = "Incorrect date format";
+            p.println(response);
+
         }
         //   String response = to.toString();
 
@@ -41,21 +47,24 @@ public class ServletSearch extends HttpServlet {
         PrintWriter p = resp.getWriter();
         try {
             // String s =  req.getParameter("id");
-            Task to1 =  objectMapper.readValue(req.getInputStream(),Task.class);
+            Task to1 = objectMapper.readValue(req.getInputStream(), Task.class);
             TaskObj to;
             String s = to1.getName();
-            if(s == null || s.equals("") )
+            if (s == null || s.equals(""))
                 to = tm.delete(to1.getId());
             else
                 to = tm.delete(to1.getName());
             //  String response = to.toString();
             p.println(to.toString());
 
-            resp.setStatus(201);
-        } catch (SQLException | ParseException e) {
-            String response = "404 none";
+
+        } catch (SQLException e) {
+            String response = "Sql query not correct or no such data.";
             p.println(response);
-            e.printStackTrace();
+        } catch (ParseException e) {
+            String response = "Incorrect date format";
+            p.println(response);
+
         }
     }
 
@@ -64,16 +73,19 @@ public class ServletSearch extends HttpServlet {
         TaskManager1 tm = new TaskManager1();
         PrintWriter p = resp.getWriter();
         try {
-            Task to1 =  objectMapper.readValue(req.getInputStream(),Task.class);
+            Task to1 = objectMapper.readValue(req.getInputStream(), Task.class);
             //String s =  req.getParameter("id");
-           // String d =  req.getParameter("Description");
-            TaskObj to = tm.updateTask(to1.getId(),to1.getDesc());
+            // String d =  req.getParameter("Description");
+            TaskObj to = tm.updateTask(to1.getId(), to1.getDesc());
             p.println(to.toString());
-            resp.setStatus(201);
-        } catch (SQLException | ParseException e) {
-            String response = "404 none";
+
+        } catch (SQLException e) {
+            String response = "Sql query not correct or no such data.";
             p.println(response);
-            e.printStackTrace();
+        } catch (ParseException e) {
+            String response = "Incorrect date format";
+            p.println(response);
+
         }
     }
 }
