@@ -15,9 +15,6 @@ import java.sql.SQLException;
 import java.text.ParseException;
 import java.util.List;
 
-//import org.json.JSONArray;
-//import javax.servlet.Servlet;
-//import javax.servlet.ServletException;
 
 public class Servlets extends HttpServlet {
     ObjectMapper objectMapper = new ObjectMapper();
