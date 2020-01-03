@@ -2,26 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2ad544fb-c221-498c-b392-3b41daf5421c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrapper/MavenWrapperDownloader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com.shivaPrabhakar/DataBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.shivaPrabhakar/DataBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com.shivaPrabhakar/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.shivaPrabhakar/Task.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servlets/ServletSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlets/ServletSearch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servlets/Servlets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlets/Servlets.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/To-Do.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/To-Do.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/To-Do/WEB-INF/classes/com/shivaPrabhakar/DataBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/To-Do/WEB-INF/classes/com/shivaPrabhakar/DataBase.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/To-Do/WEB-INF/classes/com/shivaPrabhakar/Task.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/To-Do/WEB-INF/classes/com/shivaPrabhakar/Task.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/To-Do/WEB-INF/classes/servlets/ServletSearch.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/To-Do/WEB-INF/classes/servlets/ServletSearch.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/To-Do/WEB-INF/classes/servlets/Servlets.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/To-Do/WEB-INF/classes/servlets/Servlets.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/shivaPrabhakar/DataBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/shivaPrabhakar/DataBase.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/shivaPrabhakar/Task.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/shivaPrabhakar/Task.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlets/ServletSearch.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlets/ServletSearch.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlets/Servlets.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlets/Servlets.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wrapper/maven-wrapper.properties" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
