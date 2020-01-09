@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2ad544fb-c221-498c-b392-3b41daf5421c" name="Default Changelist" comment="" />
+    <list default="true" id="2ad544fb-c221-498c-b392-3b41daf5421c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -144,14 +146,14 @@
       <screen x="49" y="27" width="1317" height="741" />
     </state>
     <state x="240" y="54" width="924" height="684" key="Maven.ArtifactSearchDialog/49.27.1317.741@49.27.1317.741" timestamp="1577705632387" />
-    <state x="363" y="224" key="com.intellij.ide.util.TipDialog" timestamp="1578031756686">
+    <state x="363" y="224" key="com.intellij.ide.util.TipDialog" timestamp="1578391333357">
       <screen x="49" y="27" width="1317" height="741" />
     </state>
-    <state x="363" y="224" key="com.intellij.ide.util.TipDialog/49.27.1317.741@49.27.1317.741" timestamp="1578031756686" />
-    <state x="49" y="100" width="1307" height="592" key="new project wizard" timestamp="1577696561700">
+    <state x="363" y="224" key="com.intellij.ide.util.TipDialog/49.27.1317.741@49.27.1317.741" timestamp="1578391333357" />
+    <state x="49" y="100" width="1307" height="592" key="new project wizard" timestamp="1578399023457">
       <screen x="49" y="27" width="1317" height="741" />
     </state>
-    <state x="49" y="100" width="1307" height="592" key="new project wizard/49.27.1317.741@49.27.1317.741" timestamp="1577696561700" />
+    <state x="49" y="100" width="1307" height="592" key="new project wizard/49.27.1317.741@49.27.1317.741" timestamp="1578399023457" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
